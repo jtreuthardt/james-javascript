@@ -44,6 +44,27 @@
   let greeting = "My Name is" + " " + name
   console.log(greeting)
   
+  //starting function that will make square numbers
+  console.log("Using functions:")
+  function makeSquare(theNumb) {
+    let squared = theNumb * theNumb;
+    return squared;
+  }
+  let try01 = makeSquare(3)
+  console.log(try01)
+  
+  //Beto O'Rourke Name Machine
+
+  function makeName(first, middle, last) {
+    let fullname = first + " " + middle + " " + last;
+    return fullname
+  }
+
+  let try02 = makeName("Robert", "\"Beto\"",  "O'Rourke")
+  console.log(try02)
+
+  console.log(try02.length)
+  console.log(try02.toUpperCase())
 </script>
 </body>
 </html>
