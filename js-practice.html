@@ -65,6 +65,47 @@
 
   console.log(try02.length)
   console.log(try02.toUpperCase())
+
+  //Working on better name maker machine
+
+  console.log("Making better name function:")
+
+  function makeBetterName(firstName,middleName,lastName) {
+    if (middleName.length === 1) {
+      middleName = middleName + ".";
+      let fullName = firstName + " " + middleName + " " + lastName;
+      return fullName;
+    } else {
+      let fullname = firstName + " " + middleName + " " + lastName;
+      return fullname;
+    }
+  }
+
+   console.log(makeBetterName("Joan", "Marie", "Larkin"));
+   console.log(makeBetterName("Donald", "F", "Trump"));
+
+   //Doing a flow control function on my own
+
+   function chooseWinner (home, away) {
+     if (home > away) {
+       result = "The home team won";
+       return result;
+     } else {
+       if (home < away) {
+         result = "The away team won";
+         return result;
+       } else {
+         if (home === away) {
+           result = "It's a tie";
+           return result
+         }
+       }
+     }
+   }
+
+   console.log(chooseWinner(4,4))
+   console.log(chooseWinner(4,3))
+   console.log(chooseWinner(3,4))
 </script>
 </body>
 </html>
